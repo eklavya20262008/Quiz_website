@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/icons/brain.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <section id="section1">
+        <div id="part1" class="part ">
+            <h2>Choose Quiz</h2>
+            <div class="container">
+                <div class="option" id="option1">
+                    <label for="sub-select">Subject:</label>
+                    <select name="Subject" id="sub-select">
+
+                    </select>
+                </div>
+                <div class="option" id="option2">
+                    <label for="topic"> Topic:</label>
+                    <select name="topic" id="topic">
+                    </select>
+                </div>
+                <div class="option" id="option3">
+                    <label for="difficulty"> Difficulty:</label>
+                    <select name="difficulty" id="difficulty">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <div class="option" id="option4">
+                    <label for="question-count">Questions:</label>
+                    <select name="question-count" id="question-count">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                    </select>
+                </div>
+            </div>
+            <div class="btn-container">
+                <button class="btn" >Start Quiz</button>
+            </div>
+        </div>
+        <div id="part2" class="part hide ">
+            <div class="upper">
+                <h4 class="question-count"></h4>
+                <h4 class="time-container"></h4>
+            </div>
+            <div class="question-container">
+                <div class="question"><img id="questionimage" src="./questionpicture/q-1.png" alt="question-1"></div>
+                <div class="option-container">
+                    <div class="option " id="option1">
+                        <div class="circle"></div><span>option1</span>
+                    </div>
+                    <div class="option " id="option2">
+                        <div class="circle "></div><span>option2</span>
+                    </div>
+                    <div class="option " id="option3">
+                        <div class="circle "></div><span>option3</span>
+                    </div>
+                    <div class="option" id="option4">
+                        <div class="circle"></div><span>option1</span>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        <div id="part3" class="part hide ">
+            <h1>Result</h1>
+            <h2>Congratulation</h2>
+            <div class="correct-container">
+                <h3 id="correct">Correct: 6/10</h3>
+                <h3 id="incorrect">Incorrect: 2/10</h3>
+                <h3 id="missed">Missed: 2/10</h3>
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+    <script type="module" src="./Questions.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
