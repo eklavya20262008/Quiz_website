@@ -93,6 +93,9 @@ startBtn.addEventListener("click", () => {
         startTimer()
         part1.classList.add("hide")
         part2.classList.remove("hide")
+        gtag("event","Quiz_Started",{
+            quiz_name:"Science_quiz"
+        })
     }
 })
 //change question
@@ -101,6 +104,10 @@ function finishQuiz() {
     clearInterval(timer);
     part3.classList.remove("hide")
     part2.classList.add("hide")
+    gtag("event","Quiz_completed",{
+            quiz_name:"Science_quiz",
+            score:`Correct: ${rightanswer}, Wrong: ${wronganswer}, Missed: ${missedanswer}`
+        })
     correcttext.innerText = `Correct: ${rightanswer}/${count}`
     missedtext.innerText = `Missed: ${missedanswer}/${count}`
     incorrecttext.innerText = `Incorrect: ${wronganswer}/${count}`
