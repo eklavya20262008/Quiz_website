@@ -16,7 +16,6 @@ const quizTime = document.querySelector("#part2 .upper .time-container")
 const questionImage = document.querySelector("#part2 .question-container .question #questionimage")
 const allOptions = document.querySelectorAll("#part2 .question-container .option")
 
-
 // all variables
 let current = 1
 let selectedSubject = ""
